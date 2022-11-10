@@ -1,20 +1,5 @@
 [
   {
-    "ModuleName": "Table/TablewithAttachment",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2022-11-10T13:54:39.5074154+08:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\TablewithAttachment.json",
-      "ForguncyDB.sqlite3"
-    ],
-    "ExclusiveType": 0
-  },
-  {
     "ModuleName": "Pages/Built-in Pages",
     "ModuleType": 6
   },
@@ -116,29 +101,11 @@
   },
   {
     "ModuleName": "PCPage/TablewithAttachment_Detail Page",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2022-11-10T13:54:39.5204154+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\TablewithAttachment_Detail Page.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/TablewithAttachment_List Page",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "GRAPECITY\\EmmaZhao",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2022-11-10T13:54:39.519399+08:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\TablewithAttachment_List Page.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "MasterPCPage/Default Master",
