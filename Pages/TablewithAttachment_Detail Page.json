@@ -1,0 +1,202 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 36.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 37.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "3,6": "ID:",
+    "5,6": "Text:",
+    "7,6": "Attachment:",
+    "14,16": "Cancel"
+  },
+  "AttachInfos": {
+    "3,14": {
+      "BindingInfo": {
+        "TableName": "TablewithAttachment",
+        "ColumnName": "ID"
+      }
+    },
+    "5,14": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      },
+      "BindingInfo": {
+        "TableName": "TablewithAttachment",
+        "ColumnName": "Text"
+      }
+    },
+    "7,14": {
+      "CellType": {
+        "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
+        "UploadLimit": {
+          "ExtensionFilter": ".jpg, .jpeg, .png, .gif, .bmp, .xlsx, .docx, .doc, .xls, .pdf",
+          "ReplaceWhenOneFile": true
+        },
+        "TemplateKey": "_RS_Normal_Style2"
+      },
+      "BindingInfo": {
+        "TableName": "TablewithAttachment",
+        "ColumnName": "Attachment"
+      }
+    },
+    "14,10": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "='TablewithAttachment_Detail Page'!K15"
+                      }
+                    ]
+                  },
+                  "value": "Add"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "TablewithAttachment",
+                    "UpdateType": "add",
+                    "ConfirmText": "Are you sure you want to add the record?",
+                    "UpdateValues": []
+                  }
+                ],
+                "ID": "5d5a417c-5c04-4c55-a5e7-ace70b758935"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "='TablewithAttachment_Detail Page'!K15"
+                      }
+                    ]
+                  },
+                  "value": "Edit"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "TablewithAttachment",
+                    "ConfirmText": "Are you sure you want to change the record?",
+                    "UpdateValues": []
+                  }
+                ],
+                "ID": "2a5dfa4a-d22a-4948-8ba6-307b2b9aa1a0"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back",
+            "PassValues": []
+          }
+        ],
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "14,16": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back",
+            "PassValues": []
+          }
+        ],
+        "Text": "Cancel",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontWeight": 0
+      },
+      {
+        "Formatter": 1
+      },
+      {
+        "Underline": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "@",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "3,6": 0,
+      "5,6": 0,
+      "5,14": 1,
+      "7,6": 0,
+      "7,14": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "14,10,1,4",
+    "14,16,1,4",
+    "7,14,6,18",
+    "5,14,1,18",
+    "3,14,1,18"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "ShouldCheckDirty": true,
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//Pei+D0gJH3e5Mp7PuzPVH5mALd8OkIMV7I+T3SZjfIBubM+/FeCtfRVZ54uKLB9P/h4wXc1ew3vqB2axsoVnfKFfMDKsWBjT3EoY0NNSqfok4of4/d9zWaDf848qXk517Hhjv2fAm2pSSY0dF0ZpE/JZRubQ785S2av+YwFZPR2MuOk3rkZqfHOKrYan9KaQCvqUmS0yaqjkhrnVy5DRKoP1pNV121HMVZp7aV4dceTF1hxRyG2XXfWO5PCaCHdn92evYv5Z1bJUxiVFyen29w779xVkIJHvXKo4ZWOYDYmpylSwX6fgZ5qlsc5W6eP1PZfCcTBrANrXFWErHBcvKwYz1NGN6vMNn+wP0e7K9ttOIvQk6p3mQim85oRY2udGsshjvhULxXD9zFCKO6XAc+82gQYtRrDyggvIHDDLsEaeGHl5Tb7ugoAEgp3uKo5N8VIrrG1rzJOB+GNNWKJe3fhgCSt8fcvMfqSRen17B+5RROW+8FJV8tLZ0+W9DMglf9jF+vdDjLSulAmdXuHrJ84ixU1XdWMta4e6K+wf0lvNAOehoXBA8I0MSvG1jaf4y//U9EPSTiZ7eDR2RF3gZ41Wz+jdDNIIsEKVCQIGV4Nv1xLl7RhMF/2kd9l6Emw7xdx1f6XZDw+s7SUDv3A7LhZjikFUHnsWqkeOK91TbHoUJjPfznPJNBLnrU8MRZl9jdT0JBHxpGT6/mfxRU2V9YvpU+vppQ5MY4410uGxrKUZZ0hq4UpFaVGDWyxND/Z/AqnjW87qYUtKttqTsb6HYi9DJhhCvyVll/Uhc1PqfdYO3bssiyptUuGyY5nQxR1o5hlzRpgkt9dsHeEEjhQqiU4yTV5bO+aCFgXJij6f/7T/6EK5ly7xgdlquT3CaNP93luIuGsMuiiKqOoaMzir1A==|920

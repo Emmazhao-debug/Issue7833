@@ -1,0 +1,230 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 55.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "3,13": "TablewithAttachment List",
+    "7,6": "Add record",
+    "9,30": "Edit",
+    "9,33": "Delete"
+  },
+  "AttachInfos": {
+    "5,13": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowCircleUserPicture": true,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "7,6": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "TablewithAttachment_Detail Page",
+            "PassValues": [
+              {
+                "Source": "Add",
+                "TargetCell": {
+                  "SerializeProperty": "='TablewithAttachment_Detail Page'!K15"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 2
+          }
+        ],
+        "Text": "Add record"
+      }
+    },
+    "8,6": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "TablewithAttachment",
+        "RowIndex": 8,
+        "ColumnIndex": 6,
+        "ColumnCount": 30,
+        "RowCount": 12,
+        "IsRowHeaderVisible": true,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "Listview1",
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2"
+      }
+    },
+    "9,8": {
+      "BindingInfo": {
+        "TableName": "TablewithAttachment",
+        "ColumnName": "Text"
+      }
+    },
+    "9,15": {
+      "CellType": {
+        "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
+        "UploadLimit": {
+          "ExtensionFilter": ".jpg, .jpeg, .png, .gif, .bmp, .xlsx, .docx, .doc, .xls, .pdf",
+          "ReplaceWhenOneFile": true
+        }
+      },
+      "BindingInfo": {
+        "TableName": "TablewithAttachment",
+        "ColumnName": "Attachment"
+      }
+    },
+    "9,30": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "TablewithAttachment_Detail Page",
+            "PassValues": [
+              {
+                "Source": "Edit",
+                "TargetCell": {
+                  "SerializeProperty": "='TablewithAttachment_Detail Page'!K15"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "Text": "Edit"
+      }
+    },
+    "9,33": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.DeleteRecordCommand, ServerDesignerCommon",
+            "ConfirmText": "Are you sure you want to delete?",
+            "UpdateValues": []
+          }
+        ],
+        "Text": "Delete"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 30.0,
+        "HorizontalAlignment": 0,
+        "VerticalAlignment": 0
+      },
+      {
+        "FontSize": 15.0,
+        "HorizontalAlignment": 1,
+        "VerticalAlignment": 0
+      },
+      {
+        "Foreground": 2,
+        "Underline": true
+      },
+      {
+        "FontFamily": 3
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 3,
+        "Foreground": 2,
+        "Underline": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Center",
+        "Right",
+        "Blue",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "3,13": 0,
+      "5,13": 1,
+      "7,6": 2,
+      "8,15": 3,
+      "8,30": 3,
+      "8,33": 3,
+      "9,8": 4,
+      "9,9": 4,
+      "9,10": 4,
+      "9,11": 4,
+      "9,12": 4,
+      "9,13": 4,
+      "9,14": 4,
+      "9,15": 5,
+      "9,30": 5,
+      "9,33": 5
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "5,13,1,7",
+    "9,6,1,2",
+    "10,6,10,30",
+    "8,6,1,2",
+    "9,8,1,7",
+    "8,8,1,7",
+    "9,15,1,15",
+    "8,15,1,15",
+    "9,30,1,3",
+    "8,30,1,3",
+    "9,33,1,3",
+    "8,33,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//33tXQVOZncR77FRQabcxhnQAYxRfX1HQZ1gH59sgMU/JEouFhjZGQILQtHUDe9aQjPKjKksZJ02vPWjhUkdkrFoFuAoA9Gb2DJjpMuCrf8Di6cGUW6N8H8RDUV1t6BqjxFKNlepmzoSUc1iIBdG5nD07RsNWCHQNmT9/5rf47xks9my3MvBamE+ABgFaCaaLpDcqC9np+vwPACE5ICnqrZvTZqbd4dCxdoqluUmMXCmoV5HW24wHsjM++7qaHbhCKAPIR/duaT9DIOM7iJwpCd+NyQHyB0ox0a45DOK4FnExVSTUoMd/xDkKn2wqSWVjzKcEw36s6JXZkXYKYEHtR4o3Nk3xXQPH4Fx9PEKQjtMLG7HxZIWnPzeSZgpXB9meYtPWc46imbOu2ilxEyMz2aFVEhJIvXWnaAICA3+zOqklWn7CGkLljBKSplO9tgxeA030MKRxBkTypwz02UwEWgjAIjbA6y7UswoyXxooFozlqM+VAaVod2GRRb82nkl4BrpJfuevIL78xruCEB2QIdH5Fkts+ZtXJ54KU/h0qbExpgnYgN2zjG54jV7qVos9EHJ7x+LwYNIUlwQ2thejYjNAnbMvNOAE3GTFv1ZN/Bly2B/8F+u/J+Us4pDFYwk1nu4q7NAy9mqTNP4wFNr33zjwjF2h56alaAPZg3cELGJt//x0TUmQWmZnwsYbbcp6j7K3YrpFuH7i3bjwWad++l5eROVCChQ5buVPxVAHoijT3OgsZ6dW7mDix6DKPhF7zUCQTo8tHC7WP0f0+VwTgzMvkltLR/l/nGZCmh4JLL3I3W/u8N5/6twZpnKfflbl9J27BIQM2sHzamXDxCzTxK4NrDfjDLJr6k1s/BoSmO3TS90pTLFGV0HjzA7kmGw6QK/N1v+qJ+VXBzOrSLJ9Tg==|920
